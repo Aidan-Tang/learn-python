@@ -1,0 +1,30 @@
+# If the name is existed in name then print "this name is existed"
+
+name = ["Olivia","Emma","Ava","harlotte","Sophia","Liam	Noah","Oliver"]
+new_name = ["olivia","emma","aVa","Harlotte","Sophia","Liam	Noah","oliver"]
+
+# since the letter case is different there should be only 2 existed
+for names in new_name:
+    if names in name:
+        print("this name is existed")
+    else:
+        print("this name is unique")
+
+
+name_lower = [name.lower() for name in name] #change the list [name] to lowercase
+newname_lower = [new_name.lower() for new_name in new_name]#change the list [new_name] to lowercase
+
+# test if it works or not
+for names in newname_lower:
+    if names in name_lower:
+        print("this name is existed")
+    else:
+        print("this name is unique")
+        
+        
+        
+  
+  
+# so basically how to change a list to lowercase is just do this:
+# [(list u wanna change).lower() for (list u wanna change) in (list u wanna change)]
+# ye I guest.....It works anyway.
