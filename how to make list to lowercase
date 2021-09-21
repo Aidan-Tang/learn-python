@@ -28,3 +28,20 @@ for names in newname_lower:
 # so basically how to change a list to lowercase is just do this:
 # [(list u wanna change).lower() for (list u wanna change) in (list u wanna change)]
 # ye I guest.....It works anyway.
+
+# just a easier example
+
+list10 = ["LiSt"]
+list20 = ["List"]
+
+list10 == list20
+# U should get False
+
+list10_lower = [list10.lower() for list10 in list10]
+
+
+list20_lower = [list20.lower() for list20 in list20]
+
+
+list10_lower == list20_lower
+# U should get True
